@@ -73,11 +73,10 @@ body {
 }
 .menu  {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .contacts {
@@ -107,20 +106,19 @@ line-height: 19px;
 
 .main h1 {
     font-weight: 400;
-font-size: 48px;
+    font-size: 48px;
 }
 .left {
     margin-top: 15px;
     font-size: 18px;
-line-height: 22px;
+    line-height: 22px;
 }
 .gradient {
     font-weight: 900;
     background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .right {
@@ -131,6 +129,9 @@ text-align: right;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+}
+.dash {
+    visibility: hidden;
 }
 
 .table span {
@@ -183,6 +184,11 @@ h5 {
 }
 .end-footer a{
     text-decoration: underline;
+}
+
+.purple-light1, .red-light1, .yellow-light, .noise, .glass, .yellow-ball {
+    position: absolute;
+    top: -10000px;
 }
 
 .red-ball1 {
@@ -242,4 +248,190 @@ filter: blur(196px);
     box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
     filter: blur(5px);
     filter: blur(2px);
+}
+
+@media (max-width: 480px) {
+    .logo1, .contacts, .info-header, .menu a:last-child {
+        position: absolute;
+        top: -200px;
+    }
+    .wrapper {
+        margin: 20px 5%;
+    }
+    .menu {
+        width: 100%;
+        justify-content: space-around;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+    .header {
+        padding-bottom: 20px;
+    }
+    .main{
+        padding-top: 40px;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 20%;
+    }
+    .main h1 {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;  
+    }
+    .right {
+        padding-top: 45px;
+        text-align: left;
+    }
+    .mobile-case {
+        text-transform: lowercase;
+    }
+    .table {
+        margin-top: 20px;
+        grid-template-rows: repeat(2, 30px);
+    }
+    .table span,  button{
+        position: absolute;
+        left: -500px;
+    }
+    .right-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    .dash {
+        visibility: visible;
+        font-family: 'Montserrat';
+        background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .footer {
+        padding: 0;
+        flex-direction: column;
+    }
+    .contacts2 {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    h5 {
+        margin-bottom:20px ;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    .menu2 {
+        width: 100%;
+    }
+    .footer p, .menu2 li {
+        padding-bottom: 10px;
+    }
+    .menu2, .about {
+        margin-bottom: 30px;
+    }
+    .contacts2 p {
+        margin: 0;
+    }
+    .contacts2 img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    .contacts2 p:last-child {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .end-footer {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+    .purple-light1 {
+        position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 258px;
+    top: 107px;
+
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+    }
+    .red-light1 {
+        position: absolute;
+        width: 211px;
+        height: 210px;
+        left: -55px;
+        top: 241px;
+
+        background: #961A1A;
+        opacity: 0.5;
+        filter: blur(196px);
+    }
+    .yellow-light {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: -200px;
+        top: 519px;
+        background-color: #FCB045;
+        opacity: 0.4;
+        filter: blur(196px);
+    }
+    .noise {
+        position: absolute;
+        width: 100%;
+        height: 388px;
+        left: 35px;
+        top: 35px;
+        background: url(noise.svg);
+        mix-blend-mode: overlay;
+    }
+    .glass {
+        position: absolute;
+        width: 100%;
+        height: 388px;
+        left: 35px;
+        top: 35px;
+        background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        filter: blur(7.5px);
+    }
+    .red-ball1 {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        left: 29px;
+        top: 402px;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        filter: blur(2px);
+    }
+    .yellow-ball {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 46px;
+        top: 629px;
+        transform: rotate(90deg);
+    }
+    .purple-ball {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 296px;
+        top: 236px;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+        filter: blur(5px);
+        filter: blur(2px);
+    }
 }
